@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  85% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-notification {
+  animation: slideIn 2s ease-in-out forwards;
+}
+
+.night-gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(34, 34, 34, 0.8));
+  color: white; /* Optional: Change text color for better visibility */
+  min-height: 100vh; /* Ensure it covers the full height */
+}
